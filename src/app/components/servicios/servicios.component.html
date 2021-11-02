@@ -1,0 +1,31 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Servicio</th>
+        <th scope="col">Fecha</th>    
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Seguridad</td>
+        <td>10/02/2015</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Aseo</td>
+        <td>06/03/2018</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Cafeteria</td>
+        <td>08/10/2020</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul>
+      <li class="text" *ngFor="let item of listaServicios | async">
+          {{item.nombre}}
+      </li>
+  </ul>

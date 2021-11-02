@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "servicios-externos-93e3f": {
+      "hosting": {
+        "serviciosexternos": [
+          "servicios-externos-93e3f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "servicios-externos-93e3f"
+  }
+}

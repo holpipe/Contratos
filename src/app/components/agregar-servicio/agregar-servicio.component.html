@@ -1,0 +1,53 @@
+<form class="row g-3 needs-validation"  (ngSubmit)="createServicio()" novalidate>
+    <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Tipo del servicio</label>
+        <input type="text" class="form-control" formControlName="tipoServicio" id="validationCustom01" value="Mark"
+            required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Nombre del servicio</label>
+        <input type="text" class="form-control" formControlName="nombreServicio" id="validationCustom02" value="Otto"
+            required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">Fecha de inicio</label>
+        <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" formControlName="fechaInicio" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+                required>
+            <div class="invalid-feedback">
+                Please choose a username.
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">Fecha de finalización</label>
+        <input type="text" class="form-control" formControlName="fechaFinalizacion" id="validationCustom03" required>
+        <div class="invalid-feedback">
+            Please provide a valid city.
+        </div>
+    </div>
+    <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Valor</label>
+        <input type="text" class="form-control" formControlName="valor" id="validationCustom05" required>
+        <div class="invalid-feedback">
+            Please provide a valid zip.
+        </div>
+    </div>
+    <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Descripción</label>
+        <input type="text" class="form-control" formControlName="descripcion" id="validationCustom05" required>
+        <div class="invalid-feedback">
+            Please provide a valid zip.
+        </div>
+    </div>
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+</form>
