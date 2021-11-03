@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AgregarServicioComponent } from './components/agregar-servicio/agregar-servicio.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { ServiciosComponent } from './components/servicios/servicios.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ServiciosComponent } from './servicios/servicios.component';
 import { EmailComponentComponent } from './email-component/email-component.component';
 import { LoginComponent } from './loginpage/loginpage.component';
 import { ProfileComponentComponent } from './profile-component/profile-component.component';
 import { SignUppageComponent } from './sign-uppage/sign-uppage.component';
+import { AgregarServicioComponent } from './agregar-servicio/agregar-servicio.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
