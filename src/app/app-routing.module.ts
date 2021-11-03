@@ -14,8 +14,8 @@ const routes: Routes = [
   { path: 'email-login', component: EmailComponentComponent },
   { path: 'signup', component: SignUppageComponent },
   { path: 'profile', component: ProfileComponentComponent },
-  { path: 'servicios-component', component: ServiciosComponent },
   { path: 'agregar-servicio', component: AgregarServicioComponent },
+  { path: 'servicios-component', component: ServiciosComponent },
   { path: 'nav-bar', component: NavbarComponent },
   { path: '**', redirectTo: 'servicios-component', pathMatch: 'full' },
 

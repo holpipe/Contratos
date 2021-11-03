@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --dark: #16191c;
+    --dark-x: #1e2126;
+    --light: #ffffff;
+}
+
+body {
+    font-family: "Spartan", sans-serif;
+    font-weight: 300;
+    color: var(--light);
+}
