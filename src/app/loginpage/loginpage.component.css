@@ -1,13 +1,27 @@
-.img-1 {
+.fondo {
   background-image: url("/src/assets/empresa.jpg");
   background-size: cover;
   background-position: center;
 }
+#tituloInferior {
+  color: aliceblue;
+  padding-top: 30px;
+  font-size: 36px;
+  text-align: center;
+}
 
-.img-2 {
-  background-image: url("/src/assets/empresa2.jpg");
-  background-size: cover;
-  background-position: center;
+.logo {
+  position: center;
+}
+
+.textoInferior {
+  color: rgba(237, 199, 199, 0.59);
+  font-size: 15px;
+  text-align: center;
+}
+
+.botonInicio {
+  color: rgba(240, 248, 255, 0.94);
 }
 
 .text-light {
