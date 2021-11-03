@@ -11,65 +11,57 @@
 			<div class="full-width navLateral-body-logo text-center tittles">
 				<i class="zmdi zmdi-close btn-menu"></i>  Servicio de contratos
 			</div>
-			<figure class="full-width" style="height: 77px;">
-				<div class="navLateral-body-cl">
-					<img src="assets/img/avatar-male.png" alt="Avatar" class="img-responsive">
-				</div>
-				<figcaption class="navLateral-body-cr hide-on-tablet">
-					<span>
-						Administrador<br>
-						<small>Admin</small>
-					</span>
-				</figcaption>
-			</figure>
+
 			<div class="full-width tittles navLateral-body-tittle-menu">
 				<i class="zmdi zmdi-desktop-mac"></i><span class="hide-on-tablet">&nbsp; BIENVENIDO</span>
 			</div>
 			<nav class="full-width">
+
 				<ul class="full-width list-unstyle menu-principal">
-					<li class="full-width">
+
+					<li class="full-width bordes" >
 						<a href="/src/app/components/agregar-servicio/agregar-servicio.component.html" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-view-dashboard"></i>
 							</div>
 							<div class="navLateral-body-cr hide-on-tablet">
-								nuevoservicio
+								Nuevo servicio
 							</div>
 						</a>
 					</li>
 
 					<li class="full-width divider-menu-h"></li>
-					<li class="full-width">
+					<li class="full-width bordes">
 						<a href="" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-washing-machine"></i>
 							</div>
 							<div class="navLateral-body-cr hide-on-tablet">
-								finalizarservicio
+								Finalizar servicio
 							</div>
 						</a>
 					</li>
 
 					<li class="full-width divider-menu-h"></li>
-					<li class="full-width">
+					<li class="full-width bordes">
 						<a href="" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-shopping-cart"></i>
 							</div>
 							<div class="navLateral-body-cr hide-on-tablet">
-								estadodelservicio
+								Estado del servicio
 							</div>
 						</a>
 					</li>
 
 					<li class="full-width divider-menu-h"></li>
-					<li class="full-width">
+					<li class="full-width bordes">
 						<a href="" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-store"></i>
 							</div>
 							<div class="navLateral-body-cr hide-on-tablet">
-								serviciosfinalizados
+                Servicios finalizados
 							</div>
 						</a>
 					</li>
@@ -80,33 +72,30 @@
 	</section>
 	<!-- pageContent -->
 	<section class="full-width pageContent">
-		<section class="full-width header-well">
+		<section class="full-width header-well ">
 			<div class="full-width header-well-icon">
 				<i class="zmdi zmdi-washing-machine"></i>
 			</div>
-			<div class="full-width header-well-text">
-				<p class="text-condensedLight">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde aut nulla accusantium minus corporis accusamus fuga harum natus molestias necessitatibus.
-				</p>
-			</div>
+
 		</section>
 		<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
 			<div class="mdl-tabs__panel is-active" id="tabNewProduct">
 				<div class="mdl-grid">
 					<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--12-col-desktop">
 						<div class="full-width panel mdl-shadow--2dp">
-							<div class="full-width panel-tittle bg-primary text-center tittles">
-								Realizar nuevo contrato
-							</div>
-							<div class="full-width panel-content">
+
+							<div class="full-width panel-content ">
+                <div class="full-width panel-tittle bg-primary text-center tittles tituloAzul" >
+                  <h5 id="tituloA">Realizar nuevo contrato</h5>
+                </div>
 								<form>
-									<div class="mdl-grid">
+									<div class="mdl-grid" class="contenido">
 										<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--6-col-desktop">
-											<h5 class="text-condensedLight">Informacion del contrato</h5>
-                      <div id="columna1">
+											<h5 class="text-condensedLight tituloContenido">Informacion del contrato</h5>
+                    <div id="columna1">
                       <div class="col-md-4">
                         <label for="validationCustom02" class="form-label">Nombre del contratista</label>
-                        <input type="text" class="form-control" formControlName="nombreServicio" id="validationCustom02" value=""
+                        <input type="text" class="form-control campoText" formControlName="nombreServicio" id="validationCustom02" value=""
                             required>
                         <div class="valid-feedback">
                             Looks good!
@@ -114,7 +103,7 @@
                       </div>
                       <div class="col-md-4">
                         <label for="validationCustom02" class="form-label">Nombre de la empresa</label>
-                        <input type="text" class="form-control" formControlName="nombreServicio" id="validationCustom02" value=""
+                        <input type="text" class="form-control campoText" formControlName="nombreServicio" id="validationCustom02" value=""
                             required>
                         <div class="valid-feedback">
                             Looks good!
@@ -122,7 +111,7 @@
                       </div>
 											<div class="col-md-4">
                         <label for="validationCustom02" class="form-label">Nombre del servicio</label>
-                        <input type="text" class="form-control" formControlName="nombreServicio" id="validationCustom02" value=""
+                        <input type="text" class="form-control campoText" formControlName="nombreServicio" id="validationCustom02" value=""
                             required>
                         <div class="valid-feedback">
                             Looks good!
@@ -130,7 +119,7 @@
                       </div>
                       <div class="col-md-4">
                         <label for="validationCustom02" class="form-label">Descripción del servicio</label>
-                        <input type="text" class="form-control" formControlName="nombreServicio" id="validationCustom02" value=""
+                        <input type="text" class="form-control campoText descripcion" formControlName="nombreServicio" id="validationCustom02" value=""
                             required>
                         <div class="valid-feedback">
                             Looks good!
@@ -142,7 +131,7 @@
                       <div id="columna2">
                       <div class="col-md-4">
                         <label for="validationCustom02" class="form-label">Fecha de inicio</label>
-                        <input type="date" class="form-control" formControlName="nombreServicio" id="validationCustom02" value=""
+                        <input type="date" class="form-control campoText" formControlName="nombreServicio" id="validationCustom02" value=""
                             required>
                         <div class="valid-feedback">
                             Looks good!
@@ -151,7 +140,7 @@
 
                       <div class="col-md-4">
                         <label for="validationCustom02" class="form-label">Fecha de finalizacion</label>
-                        <input type="date" class="form-control" formControlName="nombreServicio" id="validationCustom02" value=""
+                        <input type="date" class="form-control campoText" formControlName="nombreServicio" id="validationCustom02" value=""
                             required>
                         <div class="valid-feedback">
                             Looks good!
@@ -160,23 +149,25 @@
 
 											<div class="col-md-4">
                         <label for="validationCustom02" class="form-label">Valor del contrato</label>
-                        <input type="number" class="form-control" formControlName="nombreServicio" id="validationCustom02" value=""
+                        <input type="text" class="form-control  campoText" formControlName="nombreServicio" id="validationCustom02" value=""
                             required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                       </div>
-											<div class="mdl-textfield mdl-js-textfield">
+											<div class="mdl-textfield mdl-js-textfield agregarArchivo">
 												<input type="file">
 											</div>
+                      <div class="col-12">
+                    <button class="btn btn-primary botonAgregar" type="submit">Agregar contrato</button>
+                    </div>
+
+                    </div>
+
 										</div>
 									</div>
 
-                  <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Agregar contrato</button>
-                    </div>
 
-                    </div>
 								</form>
 							</div>
 						</div>
