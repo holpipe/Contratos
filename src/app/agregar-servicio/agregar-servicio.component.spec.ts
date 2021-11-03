@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ReactiveFormsModule } from '@angular/forms';
 import { AgregarServicioComponent } from './agregar-servicio.component';
 
 describe('AgregarServicioComponent', () => {

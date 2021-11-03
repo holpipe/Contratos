@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireModule } from '@angular/fire/compat';
@@ -12,7 +11,6 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './loginpage/loginpage.component';
 import { SignUppageComponent } from './sign-uppage/sign-uppage.component';
 import { environment } from 'src/environments/environment';
-import { FormsModule } from '@angular/forms';
 import { EmailComponentComponent } from './email-component/email-component.component';
 import { ProfileComponentComponent } from './profile-component/profile-component.component';
 import { AuthService } from './auth.service';
@@ -21,7 +19,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,15 +36,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule,
-    ReactiveFormsModule,
-    FormsModule,
+    AngularFireAuthModule, 
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
     ToastrModule.forRoot(),
     BrowserAnimationsModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
