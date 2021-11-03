@@ -35,13 +35,13 @@ body {
 }
 
 .img-1 {
-  /*background-image: url('img-1.jpg');*/
+  background-image: url("/src/app/loginpage/empresa.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .img-2 {
-  /*background-image: url('img-2.jpg');*/
+  background-image: url("/src/app/loginpage/empresa2.jpg");
   background-size: cover;
   background-position: center;
 }
