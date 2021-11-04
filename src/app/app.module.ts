@@ -20,6 +20,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AgregarServicioComponent } from './agregar-servicio/agregar-servicio.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     SignUppageComponent,
     EmailComponentComponent,
-    ProfileComponentComponent
+    ProfileComponentComponent,
+    AgregarServicioComponent
+    
   ],
   imports: [
     BrowserModule,

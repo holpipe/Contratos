@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { Observable } from 'rxjs';
 import { ServicioService } from '../services/servicio.service';
 
 @Component({
@@ -14,7 +12,7 @@ export class ServiciosComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.getServicios
+    this.getServicios();
   }
 
   getServicios(){

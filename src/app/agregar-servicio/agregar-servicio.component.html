@@ -75,7 +75,7 @@
                                 <div class="full-width panel-tittle bg-primary text-center tittles tituloAzul">
                                     <h5 id="tituloA">Realizar nuevo contrato</h5>
                                 </div>
-                                <form class="mt-4"  (ngSubmit)="agregarServicio()">
+                                <form class="mt-4" [formGroup]="createServicio" (ngSubmit)="agregarServicio()">
                                     <div class="mdl-grid" class="contenido">
                                         <div
                                             class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--6-col-desktop">
@@ -94,8 +94,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <label for="validationCustom02" class="form-label"
-                                                        formControlName="empresa" placeholder="Empresa">Nombre de la
+                                                    <label for="validationCustom02" class="form-label">Nombre de la
                                                         empresa</label>
                                                     <input type="text" class="form-control campoText"
                                                         formControlName="empresa" placeholder="Empresa"
@@ -118,8 +117,8 @@
                                                     <label for="validationCustom02" class="form-label">Descripción del
                                                         servicio</label>
                                                     <input type="text" class="form-control campoText descripcion"
-                                                        formControlName="descripcion" placeholder="Descripción"
-                                                        id="validationCustom02" value="" required>
+                                                        formControlName="descripcion" id="validationCustom02" value=""
+                                                        required>
                                                     <div class="valid-feedback">
                                                         Looks good!
                                                     </div>
@@ -150,19 +149,16 @@
                                                 <div class="col-md-4">
                                                     <label for="validationCustom02" class="form-label">Valor del
                                                         contrato</label>
-                                                    <input type="text" class="form-control  campoText"
+                                                    <input type="number" class="form-control  campoText"
                                                         formControlName="valor" placeholder="Valor"
                                                         id="validationCustom02" value="" required>
                                                     <div class="valid-feedback">
                                                         Looks good!
                                                     </div>
                                                 </div>
-                                                <div class="mdl-textfield mdl-js-textfield agregarArchivo">
-                                                    <input type="file">
-                                                </div>
                                                 <div class="col-12">
-                                                    <button class="btn btn-primary botonAgregar"
-                                                        formControlName="adjuntos" id="formFile" type="submit">Agregar
+                                                    <button class="btn btn-primary botonAgregar mt-5" id="formFile"
+                                                        type="submit">Agregar
                                                         contrato</button>
                                                 </div>
                                             </div>

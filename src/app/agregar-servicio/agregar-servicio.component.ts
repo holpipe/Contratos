@@ -22,8 +22,8 @@ export class AgregarServicioComponent implements OnInit {
       descripcion: ['', Validators.required],
       fechaInicio: ['', Validators.required],
       fechaFinalizacion: ['', Validators.required],
-      valor: ['', Validators.required],
-      adjuntos: ['', Validators.required]      
+      valor: ['', Validators.required]
+      /*adjuntos: ['', Validators.required] */     
     })
   }
   ngOnInit(): void {
@@ -41,7 +41,7 @@ export class AgregarServicioComponent implements OnInit {
       fechaInicio: this.createServicio.value.fechaInicio,
       fechaFinalizacion: this.createServicio.value.fechaFinalizacion,
       valor: this.createServicio.value.valor,
-      adjuntos: this.createServicio.value.adjuntos,  
+     /* adjuntos: this.createServicio.value.adjuntos,  */
       fechaCreacion: new Date(),
       fechaActualizacion: new Date()
     }
